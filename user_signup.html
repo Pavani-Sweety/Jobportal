@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Workociti">
+  <meta name="author" content="Workociti">
+  <meta name="keywords" content="Workociti">
+
+  <!-- Title Page-->
+  <title>Signup</title>
+
+  <!-- Font special for pages-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  <!-- Main CSS-->
+  <link href="signup/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+  <div class="page-wrapper bg-dark p-t-100 p-b-50">
+    <div class="wrapper wrapper--w900">
+      <div class="card card-6">
+        <div class="card-heading">
+          <h2 class="title">Apply for Internship</h2>
+        </div>
+        <div class="card-body">
+          
+        
+        
+         <form class="custom-form hero-form" accept-charset='UTF-8' action='https://app.formester.com/forms/dd4c0a3c-73b0-47d5-bba1-4d7d0c78c7dc/submissions' method='POST'>
+            <h1 style="font-size: 28px; color: #333; text-align: center; margin-bottom: 20px;">Register Your Details</h1>
+        
+            <!-- Email -->
+            <div class="form-row">
+                <div class="name">Email address</div>
+                <div class="value">
+                    <div class="input-group">
+                        <input class="input--style-6" type="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Password -->
+            <div class="form-row">
+                <div class="name">Password</div>
+                <div class="value">
+                    <div class="input-group">
+                        <input class="input--style-6" type="password" name="password" id="password" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Confirm Password -->
+            <div class="form-row">
+                <div class="name">Re Type Password</div>
+                <div class="value">
+                    <div class="input-group">
+                        <input class="input--style-6" type="password" name="confirm_password" id="confirm_password" onkeyup="validatePassword();" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Full Name -->
+            <div class="form-row">
+                <div class="name">Full name</div>
+                <div class="value">
+                    <input class="input--style-6" type="text" name="full_name" required>
+                </div>
+            </div>
+        
+            <!-- Date Of Birth -->
+            <div class="form-row">
+                <div class="name">Date Of Birth</div>
+                <div class="value">
+                    <input class="input--style-6" type="date" name="dob" required>
+                </div>
+            </div>
+        
+            <!-- Gender -->
+            <div class="form-row">
+                <div class="name col-lg-2">Gender</div>
+                <div class="default-select" id="default-select">
+                    <select class="col-lg-10" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Qualification -->
+            <div class="form-row">
+                <div class="name">Qualification</div>
+                <div>
+                    <div class="form-row">
+                        <div class="name">12th</div>
+                        <div class="value">
+                            <input class="input--style-6" type="text" name="12th_course" placeholder="Course">
+                            <input class="input--style-6" type="number" name="12th_marks" placeholder="Marks">
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="name">Under-Graduation</div>
+                        <div class="value">
+                            <input class="input--style-6" type="text" name="ug_course" placeholder="Course">
+                            <input class="input--style-6" type="text" name="ug_specialization" placeholder="Specialization">
+                            <input class="input--style-6" type="number" name="ug_marks" placeholder="Marks">
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="name">Masters</div>
+                        <div class="value">
+                            <input class="input--style-6" type="text" name="masters_specialization" placeholder="Specialization">
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="name">PhD</div>
+                        <div class="value">
+                            <input class="input--style-6" type="text" name="phd_paper" placeholder="Paper Presentation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+        
+            <!-- Skill Sets -->
+            <div class="form-row">
+                <div class="name">Skill Sets</div>
+                <div class="value">
+                    <input class="input--style-6" type="text" name="skills" placeholder="Enter Your Skills">
+                </div>
+            </div>
+        
+            <!-- Current Address -->
+            <div class="form-row">
+                <div class="name">Current Address</div>
+                <div class="value">
+                    <div class="input-group">
+                        <textarea class="textarea--style-6" name="address" placeholder="Enter your Address"></textarea>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Location -->
+            <div class="form-row">
+                <div class="name col-lg-2">Location</div>
+                <div class="default-select" id="default-select">
+                    <select class="col-lg-6" name="country">
+                        <option value="india">India</option>
+                        <option value="poland">Poland</option>
+                        <option value="new_zealand">New Zealand</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <input class="input--style-6" type="text" name="city" placeholder="Enter your city">
+                </div>
+            </div>
+        
+            <!-- Message -->
+            <div class="form-row">
+                <div class="name">Message</div>
+                <div class="value">
+                    <div class="input-group">
+                        <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Upload CV -->
+            <div class="form-row">
+                <div class="name">Upload CV</div>
+                <div class="value">
+                    <div class="input-group js-input-file">
+                        <input class="input-file" type="file" name="file_cv" id="file" accept=".pdf,.doc,.docx" required>
+                        <label class="label--file" for="file">Choose file</label>
+                        <span class="input-file__info">No file chosen</span>
+                    </div>
+                    <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
+                </div>
+            </div>
+        
+            <!-- Submit Button -->
+            <div class="form-row">
+                <div class="col-lg-12 col-12">
+                    <button type="submit" class="form-control" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border: 2px solid #007bff; border-radius: 5px; font-size: 18px; font-weight: bold; transition: background-color 0.3s, color 0.3s;">
+                        SUBMIT
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        </div>      
+    </div>
+  </div>
+
+  <!-- Jquery JS-->
+  <script src="signup/vendor/jquery/jquery.min.js"></script>
+
+  <!--confirm password-->
+  <script>
+    var password = document.getElementById("password"),
+      confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword() {
+      if (password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+  </script>
+
+  <!-- Main JS-->
+  <script src="signup/js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
